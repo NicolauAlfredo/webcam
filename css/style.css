@@ -1,0 +1,130 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #292936;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 10px;
+    background: #F8F8F8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: #F8F8F8;
+}
+
+.container header {
+    color: #292936;
+    font-size: 21px;
+    font-weight: 200;
+    padding: 16px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+
+.camera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.camera video {
+    width: 400px;
+    height: 100%;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-bottom: -100px;
+}
+
+.camera canvas {
+    width: 400px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.camera button {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    background: #292936;
+    text-transform: uppercase;
+    margin-top: 7rem;
+    padding: 10px;
+}
+
+.camera button:hover {
+    color: #292936;
+    background: #a1a1cf;
+}
+
+.camera .separator-foto {
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.camera .separator-foto::before {
+    content: 'Foto';
+    color: #ccc;
+    font-size: 19px;
+    padding: 0 15px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+a.baixar {
+    display: none;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+    background: #292936;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+a.baixar.sucess {
+    display: block;
+    color: #fff;
+    background: #292936;
+    transition: .7s;
+}
+
+a.baixar.sucess:hover {
+    color: #292936;
+    background: #a1a1cf;
+}
